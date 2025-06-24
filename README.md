@@ -1,126 +1,91 @@
-# SQL Projects ![icons8-mysql-logo-48](https://github.com/swaapnaa/SQL-PROJECTS/assets/149737403/95180ab6-019c-4ba1-9165-e9449cb95614)
+## SQL Projects  ![icons8-mysql-logo-48](https://github.com/swaapnaa/SQL-PROJECTS/assets/149737403/95180ab6-019c-4ba1-9165-e9449cb95614)
 
+These examples showcase my command of SQL and my ability to translate complex datasets into clear, data-driven insights. They demonstrate my skills in querying, analysis, and presenting results.
 
-These projects demonstrate my proficiency in SQL and my capacity to analyze complex data. They exhibit my abilities in data investigation, visualization, and analysis.
+---
 
 ## Analyzing Employee Trends
 
- [Analyzing Employee Trends.csv](Analyzing Employee Trends.sql) 
+**Dataset:** [Analyzing Employee Trends.csv](Analyzing%20Employee%20Trends.sql)
 
-## Project Description
+**Overview:**
+A deep dive into HR data to reveal workforce patterns. The table includes employee demographics, departmental roles, satisfaction scores, attrition status, and more.
 
-This project involved performing extensive analysis on HR employee data to uncover insights and trends. The data contained information on employees across departments, including demographics, job roles, satisfaction, attrition and more.
+**Key Contributions:**
 
-I utilized SQL to explore the data and answer key business questions to derive actionable insights.
+* Conducted initial data quality checks and exploratory queries
+* Queried employee counts, average metrics, and distributions by department, age group, and education level
+* Identified top job roles and compared satisfaction across teams
+* Calculated attrition rates by age band to highlight groups at higher risk
+* Investigated correlations between attrition and factors such as age, education, and job satisfaction
+* Compared segment-level aggregates to overall metrics to spot anomalies
+* Ranked performers by satisfaction and attrition indicators
+* Employed JOINs, GROUP BY, HAVING, and CASE statements for nuanced analysis
+* Presented findings in concise tables and summary reports for leadership
 
-## Tasks Performed
+---
 
-- Performed general data exploration and validation checks on the HR dataset
+## Exploring Trends in the Automotive Industry
 
-- Wrote SQL queries to analyze employee counts, averages, distributions across various dimensions like department, age, education etc.
+**Dataset:** [Exploring Trends in Automotive Industry.csv](Exploring%20Trends%20in%20Automotive%20Industry.sql)
 
-- Identified top job roles and satisfaction levels by department to understand departmental trends
+**Overview:**
+An in-depth assessment of car sales records to understand pricing dynamics, model reliability, and market trends. The data covers make, model, price history, mileage, transmission type, fuel type, and ownership.
 
-- Calculated employee attrition rates by age band to pinpoint high risk groups
+**Key Contributions:**
 
-- Analyzed factors related to attrition like age, education, job satisfaction to uncover drivers
+* Performed dataset validation and exploratory analysis
+* Analyzed average sale prices by transmission type, fuel category, and ownership status
+* Identified high-mileage models to gauge durability and maintenance costs
+* Measured price variability across models to inform competitive pricing
+* Detected outliers by comparing model metrics against overall averages
+* Created rolling averages and year-over-year price trend analyses
+* Computed moving averages for smoother forecasting
+* Summarized total mileage by transmission for maintenance planning
+* Ranked car models by price and tracked historical performance of top sellers
+* Utilized CTEs, WINDOW functions, and advanced JOINs for complex analytics
+* Compiled visual summaries for stakeholders to guide pricing and inventory decisions
 
-- Compared averages and aggregates across different employee segments and criteria
+---
 
-- Identified top and bottom performers on key metrics like satisfaction, attrition based on criteria
+## Call Center Data Cleaning & Analysis
 
-- Used SQL techniques like JOINs, GROUP BY, HAVING, CASE statements for complex analysis 
+**Dataset:** [call\_center.csv](call%20center.sql)
 
-- Organized and presented findings in a clear format for consumption by leadership
+**Overview:**
+Prepared and analyzed call center records to evaluate volume trends, customer satisfaction, and service efficiency. Data resides in a MySQL table within the `call_centerdata` schema.
 
+**Key Contributions:**
 
-## Exploring Trends in Automotive Industry
+* Imported call center data into MySQL and standardized date formats (YYYY-MM-DD)
+* Cleansed the dataset by converting empty CSAT scores to NULL
+* Generated summary statistics: total rows, columns, and data completeness
+* Explored distinct values for sentiment, city, and call center location
+* Calculated call counts by weekday and identified peak call durations
+* Assessed customer satisfaction by computing min, max, and adjusted average CSAT scores
+* Evaluated response time distributions to rank call center performance
+* Delivered cleaned datasets and summary reports for operations teams
 
- [Exploring Trends in Automotive Industry.csv](Exploring Trends in Automotive Industry.sql) 
-
-
-## Project Description
-
-This project involved performing extensive analysis on a database of car sales information to uncover insights into pricing trends, model performance, and more. The data contained details on car models, pricing history, mileage, transmission types and other attributes. 
-
-I utilized SQL to explore the data and derive insights to guide pricing, inventory and marketing strategies.
-
-## Tasks Performed
-
-- Performed general data exploration and validation checks on the cars dataset 
-
-- Analyzed average selling prices by various dimensions like transmission, fuel type, ownership etc. to reveal pricing patterns
-
-- Identified highest mileage models to understand durability and maintenance costs
-
-- Computed price variability within and across models to guide pricing strategy
-
-- Compared pricing and mileage metrics vs overall averages to find outliers 
-
-- Generated cumulative price trends over time and YoY comparisons for price forecasting
-
-- Computed complex iterative analytics like moving averages for price smoothing
-
-- Summarized total mileage by transmission for maintenance and repair planning
-
-- Ranked models by selling price and analyzed historical averages for top models
-
-- Used SQL techniques like WINDOW functions, CTEs, JOINs for advanced analysis
-
-- Presented findings in a clear format for consumption by leadership and stakeholders
-
-Overall, this project enabled me to showcase my SQL skills to derive data-driven insights from car sales data to support key business decisions and strategy.
-
-
-## Call Center Data Cleaning
-
- [call_center.csv](call center.sql) 
-
-
-## Project Description
-
-This project involved an analysis of call center data to gain insights into call volume, customer satisfaction, and service performance. The data was contained in a MySQL database table called call_center within the call_centerdata schema.
-
-## Tasks Performed
-
-- Imported the call_center table data into a MySQL database for analysis
-- Performed initial data cleaning
-  Changed date format to a standard YYYY-MM-DD format
-  Updated blank values for csat_score to NULL
-- Generated table summary statistics
-  Counted total number of rows
-  Counted total number of columns
-- Analyzed distinct values and distributions
-  Found distinct values for sentiment, city, and call_center columns
-  Calculated value counts and percentages by city
-- Analyzed call volume
-  Calculated call counts by day of week
-  Identified maximum call duration by day
-- Analyzed customer satisfaction
-  Calculated minimum, maximum, and average csat scores
-  Removed scores of 0 from average calculation
-- Analyzed service performance
-  Calculated response time counts by call center
-  Ordered to identify best and worst performing centers
-
+---
 
 ## About SQL
 
-SQL (Structured Query Language) is a programming language for interacting with relational databases. Key SQL capabilities:
+SQL (Structured Query Language) is the standard language for relational database management. Essential features include:
 
-- CRUD operations - create, read, update, delete data
-- Joins - combine data from multiple tables
-- Aggregate functions - summations, counts, averages on data
-- Subqueries - nested queries for advanced operations
-- Stored procedures - reusable routines for logic
-- Window functions - analytics functions for rankings etc.
+* **CRUD Operations:** Insert, select, update, and delete records
+* **Joins:** Merge data across multiple tables
+* **Aggregate Functions:** Compute sums, counts, averages, and more
+* **Subqueries:** Nest queries for complex logic
+* **Stored Procedures:** Encapsulate reusable logic
+* **Window Functions:** Perform rankings, running totals, and advanced analytics
 
-For these examples, I used Microsoft SQL Server Management Studio.
+*Tools used: Microsoft SQL Server Management Studio.*
 
-## Usage
+---
 
-- Install a SQL database such as SQL Server Express
-- Import any .sql files to run the queries
-- Modify the queries for your own database
+## Usage Instructions
 
-
+1. Install a SQL environment (e.g., SQL Server Express).
+2. Import the provided `.sql` scripts into your database.
+3. Adjust table names and schemas as needed for your setup.
+4. Run queries and review outputs to reproduce the analyses.
